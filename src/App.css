@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #d8e7ff, #d9f7e8);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Main Card */
+.card {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(80, 60, 120, 0.2);
+}
+
+/* Headings */
+h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #5b3f8c;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  margin: 0 0 30px;
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin: 0 0 8px;
+  color: #4b3b5f;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 0 0 22px;
+  border: 2px solid #e5d9f5;
+  border-radius: 12px;
+  background: #faf8ff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a678d1;
+  background: white;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px 18px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #9b6dd6, #6f8fe8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px rgba(100, 80, 160, 0.25);
+}
+
+/* Back Button */
+.secondary-button {
+  margin-top: 15px;
+  background: #f0d4e8;
+  color: #704b69;
+}
+
+.secondary-button:hover {
+  background: #e7bfdc;
+}
+
+/* Success Page */
+.success-card {
+  text-align: center;
+}
+
+.success-card h1 {
+  color: #4b9b73;
+  margin-bottom: 18px;
+}
+
+.success-card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Booking Details */
+.booking-details {
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #fff0f7, #eef4ff);
+  text-align: left;
+  border: 1px solid #eadcf5;
+}
+
+.booking-details p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.booking-details strong {
+  color: #68488c;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .card {
+    padding: 28px 22px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+.page-image {
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 15px;
+  display: block;
+  opacity: 0.8;
+  box-shadow: none;
+}
+
+.password-info {
+  margin-top: -12px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.forgot-button {
+  background: transparent;
+  color: #7652b8;
+  box-shadow: none;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.forgot-button:hover {
+  background: #f6f0ff;
+  box-shadow: none;
+  transform: none;
+}
+
+.logout-button {
+  color: #b84d67;
+  background: #ffe7ed;
+}
+
+.logout-button:hover {
+  background: #ffd5df;
+}
+
+.confirmed {
+  color: #3c9b67 !important;
+  font-weight: bold;
+  text-align: center;
+  background: #e9f9ef;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.empty-bookings {
+  text-align: center;
+}
+.card .page-image {
+  width: 100% !important;
+  height: 80px !important;
+  max-height: 80px !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  margin: 0 auto 15px auto !important;
+  display: block !important;
+  box-shadow: none !important;
+}
+}
